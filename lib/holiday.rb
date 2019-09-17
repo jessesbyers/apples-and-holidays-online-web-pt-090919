@@ -39,13 +39,13 @@ end
 #not yet passing
 def all_winter_holiday_supplies(holiday_hash)
    supply_list = []
-   holiday_hash.each do |season, holiday_hash|
-     if season == :winter
+   holiday_hash[:winter].each do |holiday_hash|
        holiday_hash.each do |holiday, supply_array|
-         supply_list << supply_array.flatten
+         supply_list << supply_array
       end
     end
   end
+  supply_list.flatten
 end
 
 
