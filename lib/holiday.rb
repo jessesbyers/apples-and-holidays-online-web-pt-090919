@@ -64,7 +64,7 @@ hol = "  #{holiday.to_s.gsub("_"," ")}: "
 
     else
 
-      puts "  #{hol.split.map(&:capitalize).join(' ')}  #{supply_array[0]}"
+      puts "  #{hol.split.map(&:capitalize).join(' ')} #{supply_array[0]}"
 
       end
       end
