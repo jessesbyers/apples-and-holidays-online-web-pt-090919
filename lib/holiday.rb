@@ -60,7 +60,7 @@ hol = "  #{holiday.to_s.gsub("_"," ")}: "
 
         if supply_array.length == 2
 
-      puts "  #{hol.split.map(&:capitalize).join(' ')}  #{supply_array[0]}, #{supply_array[1]}"
+      puts "  #{hol.split.map(&:capitalize).join(' ')} #{supply_array[0]}, #{supply_array[1]}"
 
     else
 
