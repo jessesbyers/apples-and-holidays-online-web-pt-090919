@@ -56,9 +56,9 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_hsh.each do |holiday, supply_array|
       supply_array.each do |supply|
         if supply_array.length == 2
-      puts "  #{holiday.to_s.sub("_"," ").split.capitalize}: #{supply_array[0].capitalize}, #{supply_array[1].capitalize}"
+      puts "  #{holiday.to_s.sub("_"," ").split.capitalize}: #{supply_array[0]}, #{supply_array[1]}"
     else
-      puts "  #{holiday.to_s.sub("_"," ").split.capitalize}: #{supply_array[0].capitalize}"
+      puts "  #{holiday.to_s.sub("_"," ").split.capitalize}: #{supply_array[0]}"
       end
         end
       end
