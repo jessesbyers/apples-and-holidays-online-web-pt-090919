@@ -57,7 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
         if supply_array.length == 2
       puts "  #{holiday.to_s.gsub("_"," ").capitalize}: #{supply_array[0]}, #{supply_array[1]}"
     else
-      puts "  #{holiday.to_s.gsub("_"," ").capitalize}: #{supply_array[0]}"
+      puts "  #{holiday.titleize}: #{supply_array[0]}"
       end
       end
     end
