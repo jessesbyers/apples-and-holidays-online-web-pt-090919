@@ -38,20 +38,17 @@ end
 
 #not yet passing
 def all_winter_holiday_supplies(holiday_hash)
-  supply_list = {}
-  holiday_hash.each do |season, holiday_hash|
-    if season == :winter
-      holiday_hash.each do |holiday, supply_array|
-#        binding.pry
-        supply_list = supply_array.flatten
-      end
-    end
-  end
-
+#   supply_list = {}
+#   holiday_hash.each do |season, holiday_hash|
+#     if season == :winter
+#       holiday_hash.each do |holiday, supply_array|
+# #        binding.pry
+#         supply_list = supply_array.flatten
+#       end
+#     end
+#   end
 end
-# holiday_hash[:winter].each do |holiday, supplies|
-#   winter_supplies = holiday_hash[:winter][holiday]
-# end
+
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
