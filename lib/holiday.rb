@@ -45,7 +45,6 @@ def all_winter_holiday_supplies(holiday_hash)
 #         binding.pry
     end
   end
-  supply_list.flatten.to_s
 end
 
 
