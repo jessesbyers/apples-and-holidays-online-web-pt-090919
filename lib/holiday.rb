@@ -60,11 +60,11 @@ def all_supplies_in_holidays(holiday_hash)
     else
 
       puts "  #{holiday.to_s.gsub("_"," ").capitalize}: #{supply_array[0]}"
-      binding.pry
 
       end
       end
     end
+    binding.pry
   end
 
   # iterate through holiday_hash and print items such that your readout resembles:
