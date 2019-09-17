@@ -40,10 +40,12 @@ end
 def all_winter_holiday_supplies(holiday_hash)
    supply_list = []
    holiday_hash.each do |season, holiday_hash|
+          season.each do |holiday, supply_array|
+              supply_array.each do |supply|
      if season == :winter
-     season.each do |holiday, supply_array|
+
        binding.pry
-         supply_array.each do |supply|
+
            supply_list << supply
          end
 
