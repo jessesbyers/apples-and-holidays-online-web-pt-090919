@@ -42,7 +42,7 @@ def all_winter_holiday_supplies(holiday_hash)
    holiday_hash[:winter].each do |holiday_hash|
        holiday_hash.each do |holiday, supply_array|
          supply_list << supply_array
-#         binding.pry
+         binding.pry
     end
   end
 end
