@@ -48,6 +48,7 @@ def all_winter_holiday_supplies(holiday_hash)
      end
     end
   end
+  supply_list
 end
 
 
