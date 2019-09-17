@@ -13,6 +13,11 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   holiday_hash[:spring][:memorial_day] << supply
 end
 
+def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  holiday_hash[season][holiday_name] = supply_array
+end
+
+
 
 # given that holiday_hash looks like this:
 # {
@@ -31,17 +36,16 @@ end
 #   }
 # }
 
-#Not passing - asks me to add valentines day, then says it should not have valentines day!!!
-def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_hash[season][holiday_name] = supply_array
-end
-
-
-
-
 #not yet passing
 def all_winter_holiday_supplies(holiday_hash)
-  holiday_hash[:winter]
+  supply_list = {}
+  holiday_hash.each do |season, holiday_hash|
+    if season == :winter
+      holiday_hash.each do |holiday, supply_array|
+        supply_list = holiday[supply_array]
+      end
+    end
+  end
 
 end
 # holiday_hash[:winter].each do |holiday, supplies|
