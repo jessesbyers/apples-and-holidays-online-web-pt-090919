@@ -54,11 +54,12 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_hsh|
     puts "#{season.capitalize.to_s}:"
     holiday_hsh.each do |holiday, supply_array|
-        if supply_array.length == 2
-      puts "  #{holiday.to_s.gsub("_"," ").split.capitalize.join}: #{supply_array[0]}, #{supply_array[1]}"
-    else
-      puts "  #{holiday.to_s.gsub("_"," ").split.capitalize.join}: #{supply_array[0]}"
-      end
+ #       if supply_array.length == 2
+
+      puts "  #{holiday.to_s.gsub("_"," ").capitalize}: #{supply_array[0]}, #{supply_array[1]}"
+#    else
+#      puts "  #{holiday.to_s.gsub("_"," ").split.capitalize.join}: #{supply_array[0]}"
+#      end
       end
     end
   end
