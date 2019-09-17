@@ -44,10 +44,11 @@ def all_winter_holiday_supplies(holiday_hash)
        holiday_hash[:winter].each do |holiday, supply_array|
          supply_array.collect do |supply|
            supply
-         binding.pry
        end
      end
     end
+    binding.pry
+
   end
 end
 
